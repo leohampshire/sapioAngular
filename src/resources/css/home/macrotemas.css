@@ -1,0 +1,22 @@
+.macrotemas {
+
+    padding-right: 0;
+    padding-left: 0;
+
+    background-color: var(--cor3-merlin);
+
+    /*background-image: linear-gradient(to bottom, var(--cor3-merlin), var(--cor1-merlin));*/
+
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .macrotemas {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+}

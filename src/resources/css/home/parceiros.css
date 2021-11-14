@@ -1,0 +1,93 @@
+.parceiros {
+    z-index: 2;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    background-color: var(--cor3-merlin);
+}
+
+.parceiros__titulo {
+    color: var(--cor3-merlin);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.parceiros__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parceiros__item {
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-position: top 1.25rem left 2.5rem;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+    border-color: var(--cor3-merlin);
+    fill: var(--cor3-merlin);
+    color: var(--cor3-merlin);
+    background-color: var(--cor1-merlin);
+}
+
+.parceiros__item--tempo {
+    background-image: url("../../img/icone-relogio.png");
+}
+
+.parceiros__item--foco {
+    background-image: url("../../img/icone-dinheiro.png");
+}
+
+.parceiros__item--especialistas {
+    background-image: url("../../img/icone-quimica.png");
+}
+
+.parceiros__item--titulo {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.parceiros__item--texto {
+    line-height: normal;
+}
+
+@media screen and (min-width: 768px){
+    .parceiros__item {
+        transition: 0.5s;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .parceiros__item {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .parceiros__lista {
+        justify-content: space-around;
+    }
+}

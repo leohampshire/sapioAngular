@@ -1,0 +1,6 @@
+.pessoa__nome {
+    max-resolution: 1rem 0;
+    font-family: var(--pacifico);
+    color: var(--color-vinho);
+    font-size: 2rem;
+}

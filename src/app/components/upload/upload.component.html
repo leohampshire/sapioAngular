@@ -1,0 +1,18 @@
+<app-header
+  pageName="UPLOAD"
+></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      <img class="img-fluid d-none d-sm-block" src="assets/img/home/img__home-1.svg" alt="Imagem On-line course">
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="user$ | async as user">
+        <div *ngIf="user.name;">
+          <h2>Bem Vindo, {{ user.name }}</h2>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

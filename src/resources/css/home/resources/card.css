@@ -1,0 +1,48 @@
+.card-macrotemas {
+    width: 10rem;
+    height: 3.7rem;
+    flex-direction: row;
+    fill: var(--cor1-merlin);
+    color: var(--cor1-merlin);
+
+    background-color: var(--cor3-merlin);
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .card-title {
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+    .card-text {
+        display: flex;
+    }
+
+    .card-macrotemas {
+        width: 200px;
+        height: 200px;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+    .card-macrotemas:hover {
+        border-color: var(--cor1-merlin);
+        box-shadow: 1px 8px 20px var(--cor3-merlin);
+        margin-top: -5px;
+    }
+}

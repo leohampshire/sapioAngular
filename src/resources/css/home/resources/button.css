@@ -1,0 +1,50 @@
+.button {
+    margin: 0 auto;
+}
+
+.button--content {
+    background-color: var(--cor2-merlin);
+    display: inline-block;
+    color: var(--color-white);
+    border-color: var(--cor2-merlin);
+    margin-bottom: 1rem;
+}
+
+.button--content--a:hover {
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+    .button--content:hover {
+        background-color: var(--cor3-merlin);
+        border-color: var(--cor4-merlin);
+        display: inline-block;
+        color: var(--color-white);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .button--content:hover {
+        border-color: var(--cor4-merlin);
+        color: var(--color-white);
+    }
+    .button-log {
+        background-color: var(--cor2-merlin);
+        display: inline-block;
+        color: var(--color-white);
+        border-color: var(--cor2-merlin);
+    }
+}
+
+/**@media screen and (min-width: 1500px){
+    .button {
+        position: absolute;
+        margin-left: 33rem;
+        margin-top: -13rem;
+        flex-direction: column;
+    }
+
+    .button--content {
+        width: 250px;
+    }
+}**/

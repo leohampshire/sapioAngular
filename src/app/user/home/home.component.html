@@ -1,0 +1,20 @@
+<app-header
+  pageName="HOME"
+></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      <img class="img-fluid d-none d-sm-block" src="assets/img/home/img__home-1.svg" alt="Imagem On-line course">
+    </div>
+    <div class="col-md-6 home__content--log">
+      <div *ngIf="user$ | async as user">
+        <div *ngIf="user.name; else login">
+          <h2>Bem Vindo, {{ user.name }}</h2>
+        </div>
+      </div>
+      <ng-template #login>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </div>
+  </div>
+</div>

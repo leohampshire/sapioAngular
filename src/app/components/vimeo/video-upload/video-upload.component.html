@@ -1,0 +1,18 @@
+<h4 class="text-center">Upload Video</h4>
+
+
+
+<form action= "" class="form mt-4" [formGroup]="vimeoForm" (submit)="upload()">
+<!--  <div class="mb-3">-->
+<!--    <input type="text" placeholder="Título" class="form-control" formControlName="title">-->
+<!--  </div>-->
+<!--  <div class="mb-3">-->
+<!--    <input type="text" placeholder="Descrição" class="form-control" formControlName="description">-->
+<!--  </div>-->
+  <div class="mb-3">
+    <input type="file" (change)="onFileSelected($event)" placeholder="" class="form-control" formControlName="video">
+  </div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary btn-block">Upload</button>
+  </div>
+</form>

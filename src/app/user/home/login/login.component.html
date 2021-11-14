@@ -1,0 +1,45 @@
+<p>
+  "Ninguém 'tam sapio' que não tenha algo a 'quod discere', nem 'tam stultus' que não tenha nada a 'quod doceat'"
+</p>
+<h4 class="text-center">Login</h4>
+
+<form action="" class="form mt-4" (ngSubmit)="login()" #loginForm="ngForm">
+  <app-message *ngIf="emailField.invalid && emailField.touched"
+                message="Usuário Obrigatório"
+  ></app-message>
+  <div class="mb-3">
+    <input type="email" class="form-control" placeholder="Email do Usuário"
+           [(ngModel)]="email"
+           name="email"
+           #emailField="ngModel"
+           required="required"
+    />
+  </div>
+
+  <app-message
+    *ngIf="campoPassword.invalid && campoPassword.touched"
+    message="Password Obrigatória"
+  ></app-message>
+  <div class="mb-3">
+    <input type="password"
+           class="form-control"
+           placeholder="Password"
+           [(ngModel)]="password" name="password"
+           #campoPassword="ngModel" required="required"
+    />
+  </div>
+
+  <div class="d-grid gap-2">
+    <button
+      type="submit"
+      class="btn btn-primary btn-block"
+      [disabled]="loginForm.invalid"
+    >
+      Login
+    </button>
+  </div>
+</form>
+
+<p>Não é um usuário?
+  <a [routerLink]="['register']">Cadastre-se</a>
+</p>
